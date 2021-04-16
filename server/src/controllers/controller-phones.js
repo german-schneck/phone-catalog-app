@@ -5,6 +5,7 @@ const getPhones = async (req, res) => {
   try {
     let result = phonesModel.findAll();
     res.status(200).json({
+      status: 'ok',
       data: result,
     });
   } catch (error) {
