@@ -1,7 +1,7 @@
 // Model
 const phonesModel = require('../models/phones');
 
-const getPhones = async (req, res) => {
+const getPhones = (req, res) => {
   try {
     let result = phonesModel.findAll();
     res.status(200).json({
