@@ -23,12 +23,12 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint **/*.js --format table",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "husky": {
     "hooks": {
       "pre-commit": "linter",
-      "pre-push": "npm run jest"
+      "pre-push": "npm t"
     }
   },
   "linter": {

@@ -4,8 +4,8 @@ const { app } = require('../../src/app');
 
 const phonesMock = require('../../src/mocks/phones.json');
 
-describe('Phones', () => {
-  it('should response the GET method', async () => {
+describe('This is an API of phone data', () => {
+  it('should response the GET method /phones', async () => {
     const { statusCode, body } = await request(app).get('/phones');
 
     const expected = {
