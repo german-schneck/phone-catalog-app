@@ -11,7 +11,7 @@ export function fetchPhonesList() {
   };
 }
 
-export function setPhonesList({ phones = {} }) {
+export function setPhonesList(phones = []) {
   return {
     type: SET_PHONES_LIST,
     payload: {

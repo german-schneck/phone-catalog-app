@@ -2,6 +2,10 @@
 import styled from 'styled-components';
 import Constants from '../../../../config/layout';
 
+export const loaderStyle = {
+  height: 400
+};
+
 export const Layout = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0%, 100%));

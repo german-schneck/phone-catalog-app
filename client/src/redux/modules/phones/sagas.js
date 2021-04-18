@@ -1,18 +1,29 @@
 // Dependencies
-import { takeLatest, put } from 'redux-saga/effects';
+import { takeLatest, call, put, delay } from 'redux-saga/effects';
 
 // Actions
 import {
   FETCH_PHONES_LIST,
 
+  setPhonesList,
   setPhonesListIsLoading
 } from './actions';
+
+// Services
+import { getPhoneListByAPI } from './services';
 
 function * fetchPhoneListProcess() {
   try {
     yield put(setPhonesListIsLoading(true));
 
-    // Request API.
+    const response = yield call(getPhoneListByAPI);
+
+    if (response.status === 'ok' && response.data) {
+      yield put(setPhonesList(response.data));
+    }
+
+    yield delay(1000); // A delay to show the spinner.
+    yield put(setPhonesListIsLoading(false));
   } catch (e) {
     yield put(setPhonesListIsLoading(false));
     console.error(e);
