@@ -6,11 +6,19 @@ import {
   Layout
 } from './styles';
 
+// Components
+import PhoneListContainer from '../../shared/components/containers/PhoneListContainer';
+
+// Styled Components
+import { PageContainer } from '../../shared/styled-components/layout';
+
 function HomeView() {
   return (
-		<Layout>
-			Home
-		</Layout>
+		<PageContainer>
+			<Layout>
+				<PhoneListContainer />
+			</Layout>
+		</PageContainer>
   );
 }
 

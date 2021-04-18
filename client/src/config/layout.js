@@ -1,4 +1,4 @@
-export const Constants = () => ({
+export default {
   colors: {
     BLACK: '#161616',
     WHITE: '#FFFFFF',
@@ -10,11 +10,12 @@ export const Constants = () => ({
     PRIMARY: '#6C5DD3',
     SECONDARY: '#FF754C',
 
-    GREEN: '#7FBA7A',
+    GREEN: '#54c24a',
     BLUE: '#3F8CFF'
   },
 
   sizing: {
+    HEADER_HEIGHT: 100,
     MAX_MOBILE_WIDTH: 767
   },
 
@@ -30,4 +31,4 @@ export const Constants = () => ({
     MEDIUM: '0.3s',
     SLOW: '0.5s'
   }
-});
+};

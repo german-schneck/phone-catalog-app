@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { Constants } from '../../../../config/layout';
+import Constants from '../../../../config/layout';
 
 export const MainNavigation = styled.nav``;
 
 export const MainNavigatorItem = styled(NavLink)`
   margin-right: 42px;
-  color: ${Constants().colors.BLACK};
+  color: ${Constants.colors.BLACK};
 	
   &:last-child {
     margin-right: 0;
   }
 	
 	&:hover {
-		color: ${Constants().colors.PRIMARY};
+		color: ${Constants.colors.PRIMARY};
 	}
 	
-	transition: color ${Constants().transitions.FAST} ease-in-out;
+	transition: color ${Constants.transitions.FAST} ease-in-out;
 `;
 
 export const MenuButton = styled.button`
@@ -31,7 +31,7 @@ export const MenuButton = styled.button`
 	border-radius: 50px;
 	
 	&:active {
-		background-color: ${Constants().colors.BASE_GRAY};
+		background-color: ${Constants.colors.BASE_GRAY};
 	}
 `;
 

@@ -1,6 +1,6 @@
 // Dependencies
 import { useState, useEffect } from 'react';
-import { Constants } from '../../config/layout';
+import Constants from '../../config/layout';
 
 /**
  * useCheckMobile();
@@ -25,5 +25,5 @@ export function useCheckMobile() {
     };
   });
 
-  return (width < Constants().sizing.MAX_MOBILE_WIDTH);
+  return (width < Constants.sizing.MAX_MOBILE_WIDTH);
 }

@@ -13,6 +13,7 @@ import { useCheckMobile } from '../../../hooks/useCheckMobile';
 function NavigationMenu() {
   // Hooks
   const isMobile = useCheckMobile();
+
   return (
     <NavigationMenuView
       isMobile={isMobile}
