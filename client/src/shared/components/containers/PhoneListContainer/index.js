@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useLayoutEffect } from 'react';
+import React, { useCallback, useLayoutEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 // View
@@ -10,6 +10,7 @@ import { getPhoneList, getPhoneListIsLoading } from '../../../../redux/modules/p
 
 // Actions
 import { fetchPhonesList } from '../../../../redux/modules/phones/actions';
+import { openModal } from '../../../../redux/modules/gui/actions';
 
 // Components
 import LoaderContainer from '../LoaderContainer';
@@ -17,22 +18,36 @@ import LoaderContainer from '../LoaderContainer';
 // Styles
 import { loaderStyle } from './styles';
 
-function PhoneListContainer() {
+// Utils
+import { unNormalizeState } from '../../../utils/store';
+
+// Types
+import { modalTypesId } from '../../../types/modals';
+
+function PhoneListContainer({
+  modalId = null,
+  data = {}
+}) {
   // Hooks
   const dispatch = useDispatch();
 
   // Selectors
-  const phoneList = useSelector(getPhoneList);
+  const phoneList = useSelector(state => unNormalizeState(getPhoneList(state)));
   const isLoading = useSelector(getPhoneListIsLoading);
 
   useLayoutEffect(() => {
     dispatch(fetchPhonesList());
   }, []);
 
+  const onClickPhone = useCallback((phoneId) => {
+    dispatch(openModal(modalTypesId.PHONE_DETAILS, { phoneId }));
+  }, []);
+
   return (
     <LoaderContainer isLoading={isLoading} customContainerStyle={loaderStyle}>
       <PhoneListContainerView
         data={phoneList}
+        onClickPhone={onClickPhone}
       />
     </LoaderContainer>
   );

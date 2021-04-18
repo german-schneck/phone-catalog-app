@@ -6,15 +6,18 @@ import {
 
 const initialState = {
   isLoading: true,
-  data: []
+  data: {}
 };
 
-export default function wallet(state = initialState, { type, payload }) {
+export default function phones(state = initialState, { type, payload }) {
   switch (type) {
     case SET_PHONES_LIST:
       return {
         ...state,
-        data: payload.phones
+        data: {
+          ...state.data,
+          ...payload.phones
+        }
       };
 
     case SET_PHONES_LIST_IS_LOADING:

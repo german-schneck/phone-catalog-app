@@ -10,7 +10,9 @@ import {
   MainNavigation,
   MainNavigatorItem,
   MenuButton,
-  MenuButtonIcon
+  MenuButtonIcon,
+
+  mainNavigatorItemActive
 } from './styles';
 
 function NavigationMenu({
@@ -23,6 +25,7 @@ function NavigationMenu({
 				<MainNavigatorItem
 					key={`--top-navigator-item-${index.toString()}`}
 					to={route.path}
+					activeStyle={mainNavigatorItemActive}
 				>
 					{route.label}
 				</MainNavigatorItem>

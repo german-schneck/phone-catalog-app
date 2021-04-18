@@ -1,5 +1,6 @@
 [
   {
+    "id": "6eb1306a-a053-11eb-bcbc-0242ac130002",
     "name": "Samsung Galaxy S21 Ultra",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/samsung-galaxy-s21-plus-5g-negro-frontal-02.png",
     "shortDesc": "Épico. En todos los sentidos. Galaxy S21 Ultra 5G diseñado con una sola cámara en los contornos de un marco para crear una revolución en fotografía. Equipo sin cargador ni auriculares.",
@@ -33,6 +34,7 @@
     }
   },
   {
+    "id": "79eaceb4-a053-11eb-bcbc-0242ac130002",
     "name": "OPPO A64",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/oppo-a74-5g-negro-01.png",
     "shortDesc": "El procesador Qualcomm Snapdragon 480® 5G le da al nuevo OPPO A74 5G la capacidad de darte potencia para todo el día. Y con 6 GB de RAM y 128 GB de almacenamiento, el OPPO A74 5G se mueve más rápido y almacena más de todo tu contenido favorito.",
@@ -58,6 +60,7 @@
     }
   },
   {
+    "id": "87afd292-a053-11eb-bcbc-0242ac130002",
     "name": "iPhone XS Max",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/apple-iphone-xsmax-silver-01.png",
     "shortDesc": "iPhone XS Max tienen el diseño a toda pantalla del iPhone X y ofrecen la mejor definición y la mayor densidad de píxeles presentes en un dispositivo Apple.",
@@ -87,6 +90,7 @@
     }
   },
   {
+    "id": "8f717cce-a053-11eb-bcbc-0242ac130002",
     "name": "Samsung Galaxy Note 8",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/samsung-galaxy-note8-gold-01.png",
     "shortDesc": "Ya tienes disponible el nuevo Samsung Galaxy Note 8. Con este lanzamiento se demuestra la calidad y los grandes beneficios de los Note. Una exclusiva línea de tablet con lápiz óptico que ningún otro fabricante se ha atrevido a emular. El note no es sólo un móvil, sino un impulsor de la productividad y la creatividad.",
@@ -112,6 +116,7 @@
     }
   },
   {
+    "id": "94a210a0-a053-11eb-bcbc-0242ac130002",
     "name": "Huawei P30 Pro",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/huawei-p30-pro-mystic-blue-frontal-01.png",
     "shortDesc": "El HUAWEI P30 Pro incorpora su primera Cuádruple Cámara Leica de 40MP con sensor periscópico Súper Zoom que te permitirá realizar Zoom 100% óptico 5X, Zoom híbrido 10X (mezcla de óptico + digital + IA) y Zoom 50X, el más potente del mercado capaz de conseguir fotografías estabilizadas de hasta 500 metros.",
@@ -145,6 +150,7 @@
     }
   },
   {
+    "id": "9bd2aad8-a053-11eb-bcbc-0242ac130002",
     "name": "Samsung Galaxy A12",
     "photo": "https://www.movistar.es/estaticos/imagenes/terminales-moviles/ficha-445/samsung-galaxy-a12-negro-01.png",
     "shortDesc": "Captura momentos memorables con detalles más nítidos con una cámara principal de 48 MP. Amplía el ángulo de visión con la cámara Ultra Gran Angular. Personaliza el enfoque con la cámara de profundidad o acércate más a los detalles con la cámara macro.",

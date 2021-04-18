@@ -13,6 +13,7 @@ export const Layout = styled.header`
 	height: ${Constants.sizing.HEADER_HEIGHT}px;
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 `;
 
 export const TopContainer = styled.div`
@@ -61,4 +62,8 @@ export const HeaderContent = styled(PageContainer)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const LogoImg = styled.img`
+  width: 176px;
 `;

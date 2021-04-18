@@ -30,6 +30,7 @@
         "space-before-blocks": ["error", "always"],
         "no-whitespace-before-property": "off",
         "no-throw-literal": "off",
-        "no-async-promise-executor": "off"
+        "no-async-promise-executor": "off",
+        "no-return-assign": "off"
     }
 }

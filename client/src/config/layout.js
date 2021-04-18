@@ -1,4 +1,4 @@
-export default {
+const Constants = {
   colors: {
     BLACK: '#161616',
     WHITE: '#FFFFFF',
@@ -7,7 +7,7 @@ export default {
 
     GRAY: '#828282',
 
-    PRIMARY: '#6C5DD3',
+    PRIMARY: '#00abe1',
     SECONDARY: '#FF754C',
 
     GREEN: '#54c24a',
@@ -32,3 +32,5 @@ export default {
     SLOW: '0.5s'
   }
 };
+
+export default Constants;

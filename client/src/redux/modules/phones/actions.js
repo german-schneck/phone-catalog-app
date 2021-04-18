@@ -6,8 +6,7 @@ export const SET_PHONES_LIST_IS_LOADING = 'SET_PHONES_LIST_IS_LOADING';
 // Actions
 export function fetchPhonesList() {
   return {
-    type: FETCH_PHONES_LIST,
-    payload: {}
+    type: FETCH_PHONES_LIST
   };
 }
 

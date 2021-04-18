@@ -20,24 +20,25 @@ import routes from './config/routes';
 import './index.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-// Components
-import Header from './shared/components/navigation/Header';
+// Providers
+import UIProvider from './shared/providers/UIProvider';
 
 function App() {
   return (
 		<Router>
-			{/* Router */}
-			<Header />
-			<Switch>
-				{(routes || []).map((route, index) => (
-					<Route
-						key={`--app-router-index-${index.toString()}`}
-						path={route.path}
-						exact={route.exact ?? true}
-						component={route.component ?? (() => null)}
-					/>
-				))}
-			</Switch>
+			<UIProvider>
+				{/* Router */}
+				<Switch>
+					{(routes || []).map((route, index) => (
+						<Route
+							key={`--app-router-index-${index.toString()}`}
+							path={route.path}
+							exact={route.exact ?? true}
+							component={route.component ?? (() => null)}
+						/>
+					))}
+				</Switch>
+			</UIProvider>
 		</Router>
   );
 }

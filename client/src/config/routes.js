@@ -8,7 +8,7 @@ import Home from '../screens/Home';
 export const routes = [
   // Home
   {
-    path: '/',
+    path: '/store',
     component: Home
   },
 
@@ -16,7 +16,7 @@ export const routes = [
   {
     path: '*',
     component: () => (
-			<Redirect to={'/'} />
+			<Redirect to={'/store'} />
     )
   }
 ];
@@ -24,30 +24,30 @@ export const routes = [
 export const topNavigationRoutes = [
   {
     label: 'Personas',
-    path: '#'
+    path: '/people'
   },
   {
     label: 'Empresas',
-    path: '#'
+    path: '/enterprise'
   },
   {
     label: 'Institucional',
-    path: '#'
+    path: '/institution'
   }
 ];
 
 export const mainNavigationRoutes = [
   {
     label: 'Tienda',
-    path: '#'
+    path: '/store'
   },
   {
     label: 'Productos y Servicios',
-    path: '#'
+    path: '/products-and-services'
   },
   {
     label: 'Atención al Cliente',
-    path: '#'
+    path: '/customer-help'
   }
 ];
 

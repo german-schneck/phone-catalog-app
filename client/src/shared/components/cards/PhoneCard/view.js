@@ -18,11 +18,15 @@ import { formatNumberToPrice } from '../../../utils/currencies';
 function PhoneCardView({
   name,
   currency,
-  onPress,
+  onClick,
   photo,
   price,
   variants
 }) {
+  const renderColourAvailable = useMemo(() => (
+		`Disponible en ${variants.length} ${variants.length === 1 ? 'color' : 'colores'}`
+  ), []);
+
   const renderPrice = useMemo(() => `${formatNumberToPrice(price, currency)}`, [price, currency]);
 
   const renderFinancedPrice = useMemo(() => {
@@ -33,11 +37,11 @@ function PhoneCardView({
   }, [price, currency]);
 
   return (
-		<Layout>
+		<Layout onClick={onClick}>
 			<PhoneImage src={photo} alt={name} />
 			<Data>
 				<Name>{name}</Name>
-				<AvailableColours>Disponible en {variants.length} colores</AvailableColours>
+				<AvailableColours>{renderColourAvailable}</AvailableColours>
 
 				<Price>{renderPrice}</Price>
 				<Financed>{renderFinancedPrice}</Financed>

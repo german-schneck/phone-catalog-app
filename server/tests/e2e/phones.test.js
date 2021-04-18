@@ -20,6 +20,7 @@ describe('This is an API of phone data', () => {
     expected.data.forEach((phone) => {
       // Overview
       expect(phone).toMatchObject({
+        id: expect.any(String),
         photo: expect.any(String),
         shortDesc: expect.any(String),
         price: expect.any(Number),

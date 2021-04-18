@@ -11,11 +11,16 @@ function PhoneCard({
   price,
   variants,
   currency,
-  onPress = () => {}
+  onClick = () => {}
 }) {
-  const onPressCard = () => useCallback(() => {
-    onPress(id);
-  }, []);
+  /**
+   * @function onClickCard
+   * @description It is called when the user presses on the letter,
+   * It is used to send the ID and to see the details of the phone.
+   */
+  const onClickCard = useCallback(() => {
+    onClick(id);
+  }, [id]);
 
   return (
 		<PhoneCardView
@@ -23,7 +28,7 @@ function PhoneCard({
       photo={photo}
       price={price}
       currency={currency}
-      onPress={onPressCard}
+      onClick={onClickCard}
       variants={variants}
     />
   );

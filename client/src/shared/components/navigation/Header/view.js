@@ -13,9 +13,13 @@ import {
   MainContainer,
   HeaderContent,
 
-  Logotype
+  Logotype,
+  LogoImg
 } from './styles';
 import { PageContainer } from '../../../styled-components/layout';
+
+// Assets
+import LogotypeImage from '../../../assets/images/logotype.svg';
 
 // Components
 import NavigationMenu from '../NavigationMenu';
@@ -46,7 +50,7 @@ function Header({
 			<HeaderContent>
 				{/* Logotype */}
 				<Logotype to={'/'}>
-					Phone Catalog App
+					<LogoImg src={LogotypeImage} alt={'Moviefake'} />
 				</Logotype>
 
 				{/* Navigation */}

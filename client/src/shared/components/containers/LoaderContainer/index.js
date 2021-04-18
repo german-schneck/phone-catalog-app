@@ -2,6 +2,9 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
 
+// Config
+import Constants from '../../../../config/layout';
+
 // Styled Components
 import {
   Layout
@@ -14,7 +17,7 @@ const LoaderContainer = ({ isLoading, children, customContainerStyle = {} }) => 
 		<Layout style={customContainerStyle}>
 			<Loader
 				type="TailSpin"
-				color="#00BFFF"
+				color={Constants.colors.PRIMARY}
 				height={70}
 				width={70}
 			/>

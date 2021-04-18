@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import Constants from '../../../../config/layout';
 
+export const mainNavigatorItemActive = {
+  color: Constants.colors.PRIMARY
+};
+
 export const MainNavigation = styled.nav``;
 
 export const MainNavigatorItem = styled(NavLink)`
