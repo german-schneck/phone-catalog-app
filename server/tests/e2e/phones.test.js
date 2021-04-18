@@ -22,7 +22,7 @@ describe('This is an API of phone data', () => {
       expect(phone).toMatchObject({
         photo: expect.any(String),
         shortDesc: expect.any(String),
-        price: expect.any(String),
+        price: expect.any(Number),
         currency: expect.any(String),
         variants: expect.any(Array),
         specs: expect.any(Object),
