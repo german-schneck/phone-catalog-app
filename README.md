@@ -17,3 +17,5 @@ You can launch it very easily with docker, you just need to have docker installe
 
 in the root of this file you should run:
 `docker-compose up`
+
+Look the app in `http://127.0.0.1:8080`
