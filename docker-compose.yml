@@ -1,0 +1,39 @@
+# Docker Version
+version: '3'
+
+# Services Types
+services:
+
+  # API Rest Service
+  server:
+
+    # Docker Build
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+
+    # Container image name
+    image: "phone-catalog-app/server"
+
+    # Port Listener
+    ports:
+      - "4000:4000"
+
+  # Front-End Service
+  client:
+
+    # Docker Build
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+
+    # Container image name
+    image: "phone-catalog-app/front"
+
+    # Port Listener
+    ports:
+      - "8080:80"
+
+    # Linking to service
+    links:
+      - "server"

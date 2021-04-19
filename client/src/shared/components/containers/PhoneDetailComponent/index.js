@@ -45,32 +45,32 @@ function PhoneDetailComponent({ id }) {
 					<SpecIndicator
 						icon={CPUIcon}
 						label={'Procesador'}
-						value={'Exynos 990'}
+						value={phone.specs.processor}
 					/>
 					<SpecIndicator
 						icon={CameraIcon}
 						label={'Megapixeles'}
-						value={'42'}
+						value={phone.specs.megapixels}
 					/>
 					<SpecIndicator
 						icon={ScreenSizeIcon}
 						label={'Tamaño de Pantalla:'}
-						value={'4.5"'}
+						value={`${phone.specs.screenSize}"`}
 					/>
 					<SpecIndicator
 						icon={BatteryIcon}
 						label={'Tipo de batería:'}
-						value={'4000 mAh'}
+						value={`${phone.specs.battery} mAh`}
 					/>
 					<SpecIndicator
 						icon={MemoryIcon}
 						label={'Memoria interna'}
-						value={'Exynos 990'}
+						value={`${phone.specs.internalStorage} GB`}
 					/>
 					<SpecIndicator
 						icon={MemoryIcon}
 						label={'RAM'}
-						value={'6 GB'}
+						value={phone.specs.ram}
 					/>
 				</Specs>
 			</Block>

@@ -21,7 +21,9 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint **/*.js --format table",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "docker:build": "docker build . -t phone-catalog-app/server",
+    "docker:run": "docker run -p 4000:4000 phone-catalog-app/server"
   },
   "husky": {
     "hooks": {
