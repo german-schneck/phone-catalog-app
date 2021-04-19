@@ -3,7 +3,6 @@ FROM node:10.15.0 as build
 WORKDIR /app
 COPY . .
 RUN yarn && yarn build
-EXPOSE 3000
 CMD ["npm", "start"]
 
 # Step 2. Setup Production Environment
