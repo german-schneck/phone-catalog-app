@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
 import Header from '../../components/navigation/Header';
@@ -18,5 +19,9 @@ function UIProvider({ children }) {
 		</React.Fragment>
   );
 }
+
+UIProvider.propTypes = {
+  children: PropTypes.element.isRequired
+};
 
 export default UIProvider;

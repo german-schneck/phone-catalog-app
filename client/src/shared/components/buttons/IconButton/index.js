@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Styled Components
 import {
@@ -14,5 +15,11 @@ function IconButton({ icon, alt, onClick = () => {} }) {
 		</Layout>
   );
 }
+
+IconButton.propTypes = {
+  icon: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  onClick: PropTypes.func
+};
 
 export default IconButton;

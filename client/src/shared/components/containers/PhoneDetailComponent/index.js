@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 // Styled Components
 import {
@@ -45,37 +46,41 @@ function PhoneDetailComponent({ id }) {
 					<SpecIndicator
 						icon={CPUIcon}
 						label={'Procesador'}
-						value={phone.specs.processor}
+						value={phone.specs.processor.toString()}
 					/>
 					<SpecIndicator
 						icon={CameraIcon}
 						label={'Megapixeles'}
-						value={phone.specs.megapixels}
+						value={phone.specs.megapixels.toString()}
 					/>
 					<SpecIndicator
 						icon={ScreenSizeIcon}
 						label={'Tamaño de Pantalla:'}
-						value={`${phone.specs.screenSize}"`}
+						value={`${phone.specs.screenSize.toString()}"`}
 					/>
 					<SpecIndicator
 						icon={BatteryIcon}
 						label={'Tipo de batería:'}
-						value={`${phone.specs.battery} mAh`}
+						value={`${phone.specs.battery.toString()} mAh`}
 					/>
 					<SpecIndicator
 						icon={MemoryIcon}
 						label={'Memoria interna'}
-						value={`${phone.specs.internalStorage} GB`}
+						value={`${phone.specs.internalStorage.toString()} GB`}
 					/>
 					<SpecIndicator
 						icon={MemoryIcon}
 						label={'RAM'}
-						value={phone.specs.ram}
+						value={phone.specs.ram.toString()}
 					/>
 				</Specs>
 			</Block>
 		</Layout>
   );
 }
+
+PhoneDetailComponent.propTypes = {
+  id: PropTypes.string.isRequired
+};
 
 export default PhoneDetailComponent;

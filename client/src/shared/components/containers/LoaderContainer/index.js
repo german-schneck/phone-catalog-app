@@ -1,6 +1,7 @@
 // Dependencies
 import React from 'react';
 import Loader from 'react-loader-spinner';
+import PropTypes from 'prop-types';
 
 // Config
 import Constants from '../../../../config/layout';
@@ -25,5 +26,11 @@ const LoaderContainer = ({ isLoading, children, customContainerStyle = {} }) => 
       )
     : children
 );
+
+LoaderContainer.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  children: PropTypes.element.isRequired,
+  customContainerStyle: PropTypes.object
+};
 
 export default LoaderContainer;

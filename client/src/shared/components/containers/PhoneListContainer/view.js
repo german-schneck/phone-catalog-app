@@ -16,6 +16,7 @@ function PhoneListContainerView({ data = [], onClickPhone = () => {} }) {
 						id={phone.id}
             name={phone.name}
             price={phone.price}
+						currency={phone.currency}
             variants={phone.variants}
 						photo={phone.photo}
 						onClick={onClickPhone}

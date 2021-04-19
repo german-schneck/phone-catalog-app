@@ -1,6 +1,7 @@
 // Dependencies
 import React, { useCallback, useLayoutEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 // View
 import PhoneListContainerView from './view';
@@ -52,5 +53,10 @@ function PhoneListContainer({
     </LoaderContainer>
   );
 }
+
+PhoneListContainer.propTypes = {
+  modalId: PropTypes.string,
+  data: PropTypes.object
+};
 
 export default PhoneListContainer;

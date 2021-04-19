@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Styled Components
 import {
@@ -21,5 +22,11 @@ function SpecIndicator({ icon, value, label }) {
 		</Layout>
   );
 }
+
+SpecIndicator.propTypes = {
+  icon: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
+};
 
 export default SpecIndicator;
