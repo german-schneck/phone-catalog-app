@@ -25,10 +25,7 @@ import { unNormalizeState } from '../../../utils/store';
 // Types
 import { modalTypesId } from '../../../types/modals';
 
-function PhoneListContainer({
-  modalId = null,
-  data = {}
-}) {
+function PhoneListContainer() {
   // Hooks
   const dispatch = useDispatch();
 
