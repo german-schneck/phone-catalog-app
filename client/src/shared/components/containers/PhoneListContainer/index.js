@@ -51,9 +51,4 @@ function PhoneListContainer() {
   );
 }
 
-PhoneListContainer.propTypes = {
-  modalId: PropTypes.string,
-  data: PropTypes.object
-};
-
 export default PhoneListContainer;
